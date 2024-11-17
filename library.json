@@ -23,6 +23,9 @@
       "flags": "-DSPIFFS_DATA",
       "extraScript": "scripts/handle_data.py"
     },
+    "export": {
+      "include": ["src", "PrintServer.h"]
+    },
     "extraScripts": [
       "pre:scripts/handle_data.py"
     ],
