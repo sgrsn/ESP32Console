@@ -1,0 +1,37 @@
+{
+    "name": "ESP32Console",
+    "version": "0.0.0",
+    "description": "",
+    "keywords": "ESP32, console",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/sgrsn/ESP32Console.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Hidaka SATO",
+        "email": "sgrsn1711@gmail.com",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",   
+    "frameworks": "espressif32",
+    "platforms": "*",
+    "build": {
+      "flags": "-DSPIFFS_DATA",
+      "extraScript": "scripts/handle_data.py"
+    },
+    "extraScripts": [
+      "pre:scripts/handle_data.py"
+    ],
+    "dependencies": [
+    {
+      "owner": "me-no-dev",
+      "name": "ESPAsyncWebServer",
+      "version": "^1.2.4",
+      "platforms": "espressif8266"
+    }
+    ]
+}
