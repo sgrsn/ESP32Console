@@ -30,11 +30,13 @@
       "pre:scripts/handle_data.py"
     ],
     "dependencies": [
-    {
-      "owner": "me-no-dev",
-      "name": "ESPAsyncWebServer",
-      "version": "^1.2.4",
-      "platforms": "espressif8266"
-    }
+      {
+        "owner": "me-no-dev",
+        "name": "ESPAsyncWebServer",
+        "version": "https://github.com/me-no-dev/ESPAsyncWebServer.git"
+      },
+      {
+        "name": "SPIFFS"
+      }
     ]
 }
