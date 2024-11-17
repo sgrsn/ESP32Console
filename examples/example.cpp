@@ -1,10 +1,11 @@
-#include "print_server.hpp"
+#include <Arduino.h>
+#include <PrintServer.h>
 
 DumpServer debug;
 
 void setup() {
   debug.print("Setup started");
-  WiFi.softAP("MyESP32", "12345678");
+  WiFi.softAP("DumpServer", "12345678");
   debug.begin();
   debug.print("Setup completed");
 }
