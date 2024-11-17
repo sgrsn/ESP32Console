@@ -60,4 +60,5 @@ def copy_data_files(source, target, env):
 # uploadとuploadfsの両方のターゲットで実行
 for e in (env, projenv, DefaultEnvironment()):
   e.AddPreAction("uploadfs", copy_data_files)
+  e.AddPreAction("upload", copy_data_files)
 print("==============================================")
