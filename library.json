@@ -17,7 +17,7 @@
       }
     ],
     "license": "MIT",   
-    "frameworks": "espressif32",
+    "frameworks": ["arduino", "espressif32"],
     "platforms": "*",
     "build": {
       "flags": "-DSPIFFS_DATA",
